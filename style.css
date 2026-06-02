@@ -1,0 +1,262 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+    background-image:url("background.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+
+    background-repeat:no-repeat;
+
+    color:white;
+
+    font-family:'Inter',sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,0.35);
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:40px 20px;
+}
+
+.hero h1{
+
+    font-size:clamp(4rem,10vw,8rem);
+
+    font-weight:900;
+
+    letter-spacing:-4px;
+
+    color:white;
+
+    text-shadow:
+        0 4px 20px rgba(0,0,0,0.95);
+
+}
+
+.tagline{
+margin-top:10px;
+color:#999;
+font-size:1.2rem;
+}
+
+.payment-card{
+
+    margin-top:0;
+
+    background:rgba(0,0,0,0.75);
+
+    border:2px solid rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(12px);
+
+    padding:40px;
+
+    border-radius:24px;
+
+    text-align:center;
+
+    max-width:450px;
+
+    width:100%;
+
+}
+
+.payment-card h2{
+margin-bottom:10px;
+}
+
+.price{
+font-size:3rem;
+font-weight:900;
+margin-bottom:25px;
+
+
+background:linear-gradient(
+    90deg,
+    #00d4ff,
+    #ff00cc
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+
+}
+
+.qr{
+width:280px;
+max-width:100%;
+border-radius:20px;
+transition:0.3s;
+}
+
+.qr:hover{
+transform:scale(1.05);
+}
+
+.scan-note{
+color:#bdbdbd;
+margin-top:15px;
+}
+
+.funny-note{
+margin-top:25px;
+line-height:1.7;
+color:#d6d6d6;
+}
+
+.films{
+
+
+width:100%;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:80px;
+
+padding:100px 20px 150px;
+
+
+}
+
+.film-card{
+
+
+width:min(800px,90vw);
+
+background:rgba(0,0,0,0.85);
+
+border:1px solid rgba(255,255,255,0.15);
+
+border-radius:24px;
+
+overflow:hidden;
+
+cursor:pointer;
+
+transform:translateY(150px);
+
+opacity:0;
+
+transition:
+    transform 1s cubic-bezier(0.22,1,0.36,1),
+    opacity 1s ease,
+    scale 0.3s ease;
+
+
+}
+
+.film-card.show{
+transform:translateY(0);
+opacity:1;
+}
+
+.film-card:hover{
+scale:1.02;
+}
+
+.film-card img{
+
+
+width:100%;
+
+height:420px;
+
+object-fit:cover;
+
+display:block;
+
+
+}
+
+.film-info{
+    padding:20px;
+}
+.film-info h3{
+
+
+font-size:2.5rem;
+
+font-weight:800;
+
+line-height:1.1;
+
+
+}
+
+
+.film-info p{
+color:#bdbdbd;
+}
+
+.economics-line{
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:1.4rem;
+
+    font-weight:700;
+
+    margin-top:50px;
+
+    margin-bottom:40px;
+
+    color:white;
+
+    text-align:center;
+
+    text-shadow:
+        0 2px 10px rgba(0,0,0,0.9);
+
+}
+.tagline{
+
+    margin-top:10px;
+
+    margin-bottom:30px;
+
+    color:white;
+
+    font-size:1.25rem;
+
+    text-shadow:
+        0 2px 10px rgba(0,0,0,0.9);
+
+}
+
+}
