@@ -1,5 +1,5 @@
 const films = {
-1: "https://drive.google.com/file/d/1LtLruJMzO_DU8dbwopqjO4IgVhKcE41F/view?usp=drive_link",
+1: "https://drive.google.com/file/d/1LtLruJMzO_DU8dbwopqjO4IgVhKcE41F/view?usp=sharing",
 
 2: "https://drive.google.com/file/d/1yg5lTeSLx4h_1-xwWDw4TMIRSyyE3kMF/view?usp=sharing",
 
