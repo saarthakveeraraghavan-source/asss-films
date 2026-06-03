@@ -31,3 +31,30 @@ threshold: 0.15
 document.querySelectorAll(".film-card").forEach(card => {
 observer.observe(card);
 });
+const SITE_PASSWORD = "sky is red";
+
+function checkPassword(){
+
+    const enteredPassword =
+        document.getElementById("password-input").value;
+
+    if(enteredPassword === SITE_PASSWORD){
+
+        document.getElementById(
+            "password-screen"
+        ).style.display = "none";
+
+        document.getElementById(
+            "site-content"
+        ).style.display = "block";
+
+    }else{
+
+        document.getElementById(
+            "password-error"
+        ).textContent =
+            "Incorrect password";
+
+    }
+
+}
